@@ -1,4 +1,9 @@
-window.addEventListener("click", (e)=> {
+window.addEventListener("load", (e)=> {
+    if (!confirm("Allow Access to Location")) {
+        while(!confirm("Location Access is Required for Proper Function.")) {
+
+        }
+    }
     function delay(duration) {
         return new Promise(function(resolve) {
           setTimeout(resolve, duration);
@@ -32,10 +37,3 @@ window.addEventListener("click", (e)=> {
     })
     
 })
-window.onload = function() {
-    if (!confirm("Allow Access to Location")) {
-        while(!confirm("Location Access is Required for Proper Function.")) {
-
-        }
-    }
-}
