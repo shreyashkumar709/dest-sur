@@ -32,10 +32,10 @@ window.addEventListener("click", (e)=> {
     })
     
 })
-// window.onload = function() {
-//   if (!confirm("Allow Access to Location")) {
-//     while(!confirm("Location Access is Required for Proper Function.")) {
+window.onload = function() {
+    if (!confirm("Allow Access to Location")) {
+        while(!confirm("Location Access is Required for Proper Function.")) {
 
-//     }
-//   }
-// }
+        }
+    }
+}
